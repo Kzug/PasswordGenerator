@@ -16,7 +16,6 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
 passwordPrompt();
-// passwordValid()
 if 
 (userInputPasswordLength < 8 || userInputPasswordLength > 128)
  {
@@ -28,7 +27,6 @@ uppercasePrompt();
 numbersPrompt();
 symbolsPrompt();
 buildPassword(); 
-console.log(userPassword);
 return userPassword.join("");
 }
 
@@ -61,30 +59,7 @@ function passwordPrompt() {
   if (!userInputPasswordLength) {
     return;
   }
-
-//   if 
-//   (userInputPasswordLength < 8 || userInputPasswordLength > 128)
-//    {
-//     alert('Password length must be between 8 and 128')
-//     return null;
-// }
 }
-
-// //making sure user inputs a number
-// function passwordValid() {
-// if (Number.isNaN(userInputPasswordLength));
-// else {
-//   alert('Password length must be provided as a number');
-//   return null;
-//   }
-
-// //making sure user puts in correct length of password
-// function passwordLengthValid() {
-// if (!(userInputPasswordLength >= 8) && !(userInputPasswordLength <= 128));
-//   else {
-//     alert('Password length must be between 8 and 128')
-//     return null;
-// }
 
 
 // Ask user if they want to use lowercase letters
@@ -140,7 +115,6 @@ function symbolsPrompt() {
     var addSymbol = symbols[randomSymbol]; // gets a random symbol
     userPassword = userPassword.concat(addSymbol);//adds random symbol to password
     wholePassword = wholePassword.concat(symbols);
-    console.log(userPassword);
   }
 // If user pressed Cancel, immediately end function
   if (!chooseSymbols) {
